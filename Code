@@ -1,0 +1,96 @@
+#  Project 1: Rule-Based AI Chatbot
+
+responses = {
+    # ── Greetings ───
+    "hello"         : "Hey there! 👋 I'm DecoBot. How can I help you today?",
+    "hi"            : "Hi! Welcome to DecodeLabs. What can I do for you?",
+    "hey"           : "Hey! Great to see you. Ask me anything!",
+    "good morning"  : "Good morning! ☀️  Hope you have a productive day at DecodeLabs!",
+    "good afternoon": "Good afternoon! 🌤️  How's the internship going?",
+    "good evening"  : "Good evening! 🌙  Still coding? Respect. How can I help?",
+
+    # ── About / Identity ──
+    "who are you"   : "I'm DecoBot 🤖 — a Rule-Based AI built by a DecodeLabs intern. No neural nets, just pure logic!",
+    "what is your name": "My name is DecoBot! Powered by if-else logic and Python dictionaries.",
+    "what can you do": "I can answer questions about AI, DecodeLabs projects, and general topics. Try me!",
+
+    # ── DecodeLabs / Internship ──
+    "what is decodelabs" : "DecodeLabs is an AI training company based in Greater Lucknow, India 📍. They run industrial training programs for aspiring AI engineers.",
+    "about decodelabs"   : "DecodeLabs provides hands-on AI project training. Website: www.decodelabs.tech",
+    "what is project 1"  : "Project 1 is the Rule-Based Chatbot — the foundation phase. You're looking at it! 🎉",
+    "internship"         : "This internship at DecodeLabs helps you build a real-world AI portfolio. Keep going — you're doing great!",
+
+    # ── AI Concepts ──
+    "what is ai"         : "AI (Artificial Intelligence) is the simulation of human intelligence by machines. It includes rule-based systems, ML, and deep learning.",
+    "what is machine learning": "Machine Learning is a type of AI where machines learn patterns from data instead of following hard-coded rules.",
+    "what is deep learning"   : "Deep Learning uses neural networks with many layers to learn complex patterns — like image recognition and language models.",
+    "what is supervised learning": "Supervised Learning trains a model on labeled data — input-output pairs — so it can predict outputs for new inputs.",
+    "difference between ai and ml": "AI is the broad concept of machines being smart. ML is a subset of AI where machines learn from data automatically.",
+
+    # ── Python / Programming ───
+    "what is python"     : "Python is the most popular language for AI & ML. It's simple, readable, and has powerful libraries like NumPy, pandas, and scikit-learn.",
+    "what is a loop"     : "A loop repeats a block of code. This chatbot uses a 'while True' loop — it keeps running until you type 'exit'.",
+
+    # ── Small Talk ───
+    "how are you"        : "I'm just code, but I'm running perfectly! 😄 How about you?",
+    "what is your age"   : "I was born today when you ran this script. So I'm 0 seconds old! 👶",
+    "tell me a joke"     : "Why do programmers prefer dark mode? Because light attracts bugs! 🐛😂",
+    "thank you"          : "You're welcome! Keep building and learning. 💪",
+    "thanks"             : "Anytime! That's what I'm here for. 🤖",
+
+    # ── Farewells ───
+    "bye"                : "Goodbye! Keep coding and stay curious. 👋",
+    "goodbye"            : "See you later! DecoBot signing off. 🚀",
+    "see you"            : "See you soon! Remember: every expert was once a beginner.",
+}
+
+# ── STEP 2: RESPONSE ENGINE ───
+def get_response(user_input: str) -> str:
+
+    # lowercase + remove whitespace
+    clean_input = user_input.lower().strip()
+
+    # Exit Strategy
+    if clean_input in ("exit", "quit", "q", "stop", "close"):
+        return "__EXIT__"
+
+    # Dictionary lookup with fallback (from .get() method slide)
+    reply = responses.get(
+        clean_input,
+        "🤔 I don't understand that yet. Try: 'hello', 'what is AI', 'tell me a joke', or 'bye'."
+    )
+    return reply
+
+
+# ── STEP 3: INFINITE LOOP ──
+def run_chatbot():
+    """
+    Continuous 'while True' loop — the organism stays alive
+    until the Kill Command (exit/quit) is received.
+    """
+
+    print("  ——————————————— Rule-Based AI Chatbot ———————————————")
+    print("  Type 'exit' or 'quit' to stop the chatbot.")
+    print("  Try: hello | what is AI | tell me a joke | bye")
+    print("-" * 55)
+
+    # ── THE INFINITE LOOP (while True) ───
+    while True:
+
+        # Phase 1: INPUT
+        raw_input = input("\nYou: ")
+
+        # Phase 2: PROCESS
+        response = get_response(raw_input)
+
+        # Phase 3: OUTPUT
+        if response == "__EXIT__":
+            print("\nDecoBot: Goodbye! Thanks for chatting. 👋")
+            break   # break from loop
+
+        print(f"DecoBot: {response}")
+
+
+# ── ENTRY POINT ───
+if __name__ == "__main__":
+    run_chatbot()
