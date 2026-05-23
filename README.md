@@ -1,4 +1,4 @@
-# 🤖 CHATBOT WITH RULE-BASED RESPONSES
+# CHATBOT WITH RULE-BASED RESPONSES
 A simple yet functional **rule-based chatbot** built using Python. This project demonstrates how basic conversational AI can be implemented using hardcoded rules, conditional logic, and keyword detection. The chatbot can handle greetings, identity questions, weather queries, jokes, and more — making it a fun and educational beginner-level project.
 
 ---
@@ -7,7 +7,8 @@ A simple yet functional **rule-based chatbot** built using Python. This project 
 
 - [📖 Overview](#-overview)  
 - [✨ Features](#-features)  
-- [🛠️ Technologies Used](#️-technologies-used)   
+- [🛠️ Technologies Used](#️-technologies-used)
+- [🚀 Code ](#code )  
 - [💬 Example Usage](#-example-usage)  
 - [🔧 Future Enhancements](#-future-enhancements)  
 
@@ -46,7 +47,7 @@ It's a beginner-friendly project to explore how chatbots work and lays the found
 - **IDE/Editor**: Visual Studio Code / Any Python-supported IDE
 
 ---
-## 🛠️ Code 
+## 🚀 Code 
 - **Objectives**:
   - In this code we are going to create a Rule Based AI Chatbot.
   - Our main Goal is to Create a simple rule-based chatbot that responds to predefined user inputs.
