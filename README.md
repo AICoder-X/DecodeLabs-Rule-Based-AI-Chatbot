@@ -49,51 +49,20 @@ It's a beginner-friendly project to explore how chatbots work and lays the found
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-Make sure you have Python installed. You can check with:
-
-```bash
-python --version
-```
-
-### Run the Chatbot
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/chatbot-rule-based.git
-```
-
-2. Navigate to the project folder:
-
-```bash
-cd chatbot-rule-based
-```
-
-3. Run the chatbot:
-
-```bash
-python chatbot.py
-```
-
----
-
 ## 💬 Example Usage
 
 ```bash
 You: hello
-Bot: Hi there! How can I help you today?
+Bot: Hey there! 👋 I'm DecoBot. How can I help you today?
 
-You: can you tell me a joke?
-Bot: Why don't scientists trust atoms? Because they make up everything!
+You: tell me a joke?
+Bot: Why do programmers prefer dark mode? Because light attracts bugs! 🐛😂
 
-You: who are you?
-Bot: I’m a chatbot created to assist you with basic queries.
+You: how are you?
+Bot: I'm just code, but I'm running perfectly! 😄 How about you?
 
 You: bye
-Bot: Goodbye! Have a great day!
+Bot: Goodbye! Keep coding and stay curious. 👋
 ```
 
 ---
