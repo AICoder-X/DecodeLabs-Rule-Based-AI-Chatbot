@@ -7,11 +7,9 @@ A simple yet functional **rule-based chatbot** built using Python. This project 
 
 - [📖 Overview](#-overview)  
 - [✨ Features](#-features)  
-- [🛠️ Technologies Used](#️-technologies-used)  
-- [🚀 Getting Started](#-getting-started)  
+- [🛠️ Technologies Used](#️-technologies-used)   
 - [💬 Example Usage](#-example-usage)  
 - [🔧 Future Enhancements](#-future-enhancements)  
-- [📄 License](#-license)
 
 ---
 
