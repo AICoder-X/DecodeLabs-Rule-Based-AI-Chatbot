@@ -10,15 +10,14 @@
 <ol>
       <li>Firstly, we created a dictionary with predefined keys as user input and response is defined as output.</li>
       <li>After that a method is defined that takes input as parameter ,then convert them in lower case and remove whitespaces.</li>
-            <li>Then a conditional if statement to handle exit condition.</li>
-            <li>In case of any input that is not present in dictionary this will be handle by a built-in .get function, this condition is required because we have limited chat-bot.</li>
-            <li>This function will return the reply on th bases of condition.</li>
+      <li>Then a conditional if statement to handle exit condition.</li>
+      <li>In case of any input that is not present in dictionary this will be handle by a built-in .get function, this condition is required because we have limited chat-bot.</li>
+      <li>This function will return the reply on th bases of condition.</li>
       <li>After that a method is defined that run the chat-bot.</li>
       <li>Display user interface with some messages.</li>
-            <li>Then, a while statement that takes input from user</li> 
-            <li>call the get_response function and pass the input as an argument.</li>
-            <li>it run untill the exit condition will not true.</li>
-
+      <li>Then, a while statement that takes input from user</li> 
+      <li>Call the get_response function and pass the input as an argument.</li>
+      <li>It run untill the exit condition will not true.</li>
       <li>At the end of code we have starting point of program that call the other functions.</li>
 </ol>
 
